@@ -10,13 +10,13 @@ My recipeBoook will allow the users to store all of their all-time favourite rec
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-#  INTERFACE 
+**INTERFACE**
 public interface Recipe
 {
     public String recipeDetail(); 
 }
 
-#  ABSTRACT CLASS
+**ABSTRACT CLASS**
 public abstract class RecipeStructure 
 {
     String course, recipeName;
@@ -45,7 +45,7 @@ public abstract class RecipeStructure
     abstract int recipeNameLength();
 }//end abstract class
 
-#  RECIPEBOOK 
+**RECIPEBOOK**
 public class RecipeBook extends RecipeStructure implements Recipe
 
 {
@@ -193,7 +193,7 @@ public class RecipeBook extends RecipeStructure implements Recipe
     }//end toString() method
 }//ends main class
 
-#  RECIPEBOOK DRIVER 
+**RECIPEBOOK DRIVER**
 import java.util.Scanner;//import package for Scanner
 public class RecipeBookDriver
 {
@@ -270,6 +270,94 @@ public class RecipeBookDriver
     }//ends main method
 }//ends main class
 
+**RecipeBook2** 
+import java.util.ArrayList;//import package for array list
+public class RecipeBook2 implements Recipe
+{
+    private RecipeBook[] dessert; 
+    private ArrayList<RecipeBook> main;
+    public RecipeBook2()
+    {
+        dessert=new RecipeBook[4]; 
+        dessert[0]= new RecipeBook ("Dessert", "Deconstructed Cheesecake", 6, 1.5 , 5.5 , 12);
+        dessert[1]= new RecipeBook ("Dessert", "Chocolat Pots de Creme ", 8, 0.5 , 1.75 , 7);
+        dessert[2]= new RecipeBook ("Dessert", "Rose-Lychee Macarons", 12, 0.5 , 1.5 , 5);
+        dessert[3]= new RecipeBook ("Dessert", "Anti-Griddle Ice Cream", 10, 0.5 , 0.25 , 6);
+        //instantiates and populates array dessert
+        
+        main = new ArrayList<RecipeBook>();
+        main.add(new RecipeBook("Main Course", "I Spaghetti Carbonara", 6, 0.5, 1, 10)); 
+        main.add(new RecipeBook("Main Course", "Sous Vide Filet Mignon", 8, 1, 12, 15)); 
+        main.add(new RecipeBook("Main Course", "I Spaghetti Carbonara", 6, 0.5, 1, 10)); 
+        main.add(new RecipeBook("Main Course", "I Spaghetti Carbonara", 6, 0.5, 1, 10)); 
+        //instantiates and populates arraylist main 
+    }//end zero-arg constructor
+    public void selectionSort()
+    {
+        for (int i = 0; i < dessert.length - 1; i++)
+        {
+            int index = i;
+            for (int j = i + 1; j < dessert.length; j++)
+                if (dessert[j].getCookingTime() < dessert[index].getCookingTime())
+                 {
+                    index = j;
+                    double smallerNumber = dessert[index].getCookingTime(); 
+                    dessert[index].getCookingTime() = dessert[i].getCookingTime();
+                    dessert[i] = smallerNumber;
+                }
+        }
+        return dessert;
+    }//selection sort
+    public String recipeDetail()
+    {
+        String output= new String();
+        output="pg." + (int)(Math.random()*20)+1 + "\nCourse: Main Course";
+        for (RecipeBook m: main)//for-eaach loop
+        {
+            output+= "\nRecipe Name:" +  m.getRecipeName() + "\nServings:" +  m.getServings()
+            + "\nTotal Cook Time:" +  m.totalTime() + "hrs    Prep Time:" + m.getPrepTime()
+            + "hrs      Cooking Time:" + m.getCookingTime() + "hrs\n";
+        }//trasverse arraylist main
+        output+= "\n\npg." + (int)(Math.random()*20)+1 + "\nCourse: Dessert";
+        for (int i=0; i<dessert.length;i++)//for loop
+        {
+            output+= "\nRecipe Name:" + dessert[i].getRecipeName() + "\nServings:" + dessert[i].getServings()
+            + "\nTotal Cook Time:" + dessert[i].totalTime() + "hrs    Prep Time:" + dessert[i].getPrepTime()
+            + "hrs      Cooking Time:" + dessert[i].getCookingTime() + "hrs\n\n";
+        }//trasverse array dessert
+        for (int i = 1; i <= 9; i++)
+        {
+            for(int c = 1; c <=1; c++)
+              {
+                output+= "*";   
+              }
+            for(int k =1; k <=1; k++)
+              {
+                output+="Copyright Belongs to Vanessa"; 
+              }
+            for(int l = 1; l >= 1; l--)
+              {
+               output+="*"; 
+              }
+            output+="\n";
+        }//nested loop that prints copyright belongs to Vanessa        
+        return output;
+    }//implements method from interface
+    public String toString()
+    {
+        return recipeDetail();
+    }//end toString() method
+}//ends main class
+
+**RecipeBook2 Driver**
+public class RecipeBook2Driver 
+{
+    public static void main (String[] args)
+    {
+        RecipeBook2 recipes= new RecipeBook2();//class composition
+        System.out.println(recipes);//prints out the array and arraylist from class RecipeBook2 
+    }//end main method 
+}//end main class
 
 
 # Header 1
