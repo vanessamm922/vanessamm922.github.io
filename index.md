@@ -2,7 +2,9 @@
 
 My recipeBoook will allow the users to store all of their all-time favourite recipes into a digital book, the code and images are presented below. 
 
-### Markdown
+![Image](src)
+
+### Code
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
