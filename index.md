@@ -2,7 +2,7 @@
 
 My recipeBoook will allow the users to store all of their all-time favourite recipes into a digital book, the code and images are presented below. 
 
-<img src= "UML Diagram.png"/>
+<img src= "file:///Users/vanessamm/Desktop/UML%20Diagram.png"/>
 ![Image](src)
 
 ### Code
