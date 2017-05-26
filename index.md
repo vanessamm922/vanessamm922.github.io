@@ -7,7 +7,7 @@ My recipeBoook will allow the users to store all of their all-time favourite rec
 
 ### Code
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Heres my code for my RecipeBook
 
 ```markdown
 **INTERFACE**
@@ -349,7 +349,7 @@ public class RecipeBook2 implements Recipe
     }//end toString() method
 }//ends main class
 
-**RecipeBook2 Driver**
+**Bold**
 public class RecipeBook2Driver 
 {
     public static void main (String[] args)
