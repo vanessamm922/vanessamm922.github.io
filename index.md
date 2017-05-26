@@ -10,7 +10,11 @@ My recipeBoook will allow the users to store all of their all-time favourite rec
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
+Interface 
+public interface Recipe
+{
+    public String recipeDetail(); 
+}
 
 # Header 1
 ## Header 2
