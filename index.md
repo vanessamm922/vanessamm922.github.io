@@ -2,6 +2,7 @@
 
 My recipeBoook will allow the users to store all of their all-time favourite recipes into a digital book, the code and images are presented below. 
 
+Here is my UML Diagram showing a summary of my code:
 [UML DIAGRAM] (https://docs.google.com/document/d/1gMa_w215jX3WNL893ltN1CIS6OvcaoAEXZNzdAis8Bk/edit?usp=sharing)
 
 ### Code
@@ -358,10 +359,11 @@ public class RecipeBook2Driver
     }//end main method 
 }//end main class
 
-[Link](url) and ![Image](src)
 ```
 
 
-### Jekyll Themes
+### Testing
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/vanessamm922/vanessamm922.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Now to see if my code actually works.... [Demo] (https://docs.google.com/document/d/1IbJu6B_KkOh82d3yR5vQ7uYeWvH8Fq_c1N2ySmBHT1w/edit?usp=sharing).
+
+THANKS FOR CHECKING OUT MY CODE 
