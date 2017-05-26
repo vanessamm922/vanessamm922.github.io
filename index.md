@@ -1,7 +1,6 @@
 ## Welcome to Vanessa's Recipe Book!
 
-You can use the [editor on GitHub](https://github.com/vanessamm922/vanessamm922.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown fihH
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+My recipeBoook will allow the users to store all of their all-time favourite recipes into a digital book, the code and images are presented below. 
 
 ### Markdown
 
